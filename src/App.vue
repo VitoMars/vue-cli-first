@@ -1,18 +1,19 @@
 <template>
    <div id="app">
-      <titolo msg="QUACK" />
-
-      <img src="./assets/img/duck.jpg" alt="" />
+      <titolo msg="La mia prima app con Vue CLI!" />
+      <quack msg="quack" />
    </div>
 </template>
 
 <script>
-import titolo from "./components/Quack.vue";
+import titolo from "./components/Titolo.vue";
+import quack from "./components/Hero.vue";
 
 export default {
    name: "App",
    components: {
       titolo,
+      quack,
    },
 };
 </script>
